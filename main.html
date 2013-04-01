@@ -12,18 +12,20 @@
 </head>
 <body onload="load();">
     <div id="front">
-        <img id="frontImg" src="Parts/Images/front.png" alt="">
-        <textarea id="textFront" onkeypress="updateLabelFront(event)"></textarea>
+      <textarea id="textFront" class="text" onkeypress="updateLabelFront(event)"></textarea>
+      <div class="buttons">
         <div id="copyFront"></div>
+        <div id="dateFront" class="date"></div>
         <div id="goBack"></div>
-        <div id="dateFront"></div>
+      </div>
     </div>
     <div id="back">
-        <img id="backImg" src="Parts/Images/back.png" alt="">
-        <div id="goFront"></div>
-        <textarea id="textBack" onkeypress="updateLabelBack(event)"></textarea>
+      <textarea id="textBack" class="text" onkeypress="updateLabelBack(event)"></textarea>
+      <div class="buttons">
         <div id="copyBack"></div>
-        <div id="dateBack"></div>
+        <div id="dateBack" class="date"></div>
+        <div id="goFront"></div>
+      </div>
     </div>
 </body>
 </html>
